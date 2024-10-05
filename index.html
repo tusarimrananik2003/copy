@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Text</title>
+  <style>
+    body {
+      background-color: #2c2f33;
+      font-family: "GG Sans", sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #23272a;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    .text-box {
+      background-color: #2f3136;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .copy-btn {
+      background-color: #7289da;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .copy-btn:hover {
+      background-color: #5b6eae;
+    }
+
+    .success-msg {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #43b581;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <input type="text" class="text-box" id="textToCopy" value="Copy this cool text!">
+    <button class="copy-btn" onclick="copyText()">Copy</button>
+    <p class="success-msg" id="successMsg">Text copied to clipboard!</p>
+  </div>
+
+  <script>
+    function copyText() {
+      const textBox = document.getElementById('textToCopy');
+      textBox.select();
+      document.execCommand('copy');
+
+      const successMsg = document.getElementById('successMsg');
+      successMsg.style.display = 'block';
+      setTimeout(() => {
+        successMsg.style.display = 'none';
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>
