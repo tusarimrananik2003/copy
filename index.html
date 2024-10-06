@@ -13,7 +13,7 @@
     }
 
     .container {
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -146,7 +146,6 @@
     function copyText(element) {
       const text = element.previousElementSibling.textContent;
       navigator.clipboard.writeText(text).then(() => {
-        alert('Text copied to clipboard');
       });
     }
   </script>
