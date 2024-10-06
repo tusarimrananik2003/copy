@@ -3,84 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copy Text</title>
+  <title>Discord-Style Message List with Copy Button</title>
   <style>
     body {
-      background-color: #2c2f33;
-      font-family: "GG Sans", sans-serif;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      background-color: #23272A;
+      font-family: 'Arial', sans-serif;
+      color: #FFFFFF;
+      padding: 20px;
     }
 
     .container {
-      background-color: #23272a;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 300px;
-      text-align: center;
+      width: 50%;
+      margin: 0 auto;
     }
 
-    .text-box {
-      background-color: #2f3136;
-      border: none;
-      border-radius: 5px;
+    .message {
+      background-color: #40444B;
       padding: 10px;
-      width: 100%;
-      color: #fff;
-      font-size: 16px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      word-wrap: break-word;
     }
 
     .copy-btn {
-      background-color: #7289da;
+      background-color: #7289DA;
       border: none;
-      border-radius: 5px;
-      padding: 10px;
-      width: 100%;
-      color: #fff;
-      font-size: 16px;
+      color: white;
+      padding: 5px 10px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     .copy-btn:hover {
-      background-color: #5b6eae;
-    }
-
-    .success-msg {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #43b581;
-      display: none;
+      background-color: #5b6ea3;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <input type="text" class="text-box" id="textToCopy" value="Copy this cool text!">
-    <button class="copy-btn" onclick="copyText()">Copy</button>
-    <p class="success-msg" id="successMsg">Text copied to clipboard!</p>
+    <div class="message">
+      <p>যেকোনো আইডি হ্যা*ক করাতে ইন,বক্স ✅</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>হ্যা@কিং বিষয়ে যেকোনো ধরনের সাহায্যের জন্য ইন'বক্সে যো'গাযোগ করুন !!</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যে কোনো ফে'সবু'ক, ইমু, হোয়াট'সঅ্যাপ সহ আরো সব কিছু হ্যা'*ক লাগলে ইনব,ক্স করুন</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যে কোনো ফেসবুক হ্যা*ক লাগলে ইনবক্স করুন !</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>👉 ফেস'বুক, জিমে'ইল অথবা অন্যান্য আইডির যাবতীয় সমস্যা, আই'ডি হ্যাক, রিকো'ভার করাতে চাইলে ইনব'*ক্সে যোগা*যোগ করুন।</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যেকোনো ধরনের ফেসবুক একাউন্টের এক্সেস নিতে চাইলে যোগা*যোগ করুন ✅</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>✅ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐈𝐃 হ্যা..ক করা হয় এখনি ই.নবক্স করুন. !!</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যে কোনো আইডি হ্যা@ক করতে চাইলে সরাসরি যোগা,যোগ করুন</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>হ্যা``কিং বিষয়ে যে কোনো হেল্প লাগলে অথবা হ্যাক করাতে চাইলে ইনবক্স করুন✔️</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যেকোন আইডি ha`ck/back করতে চাইলে আমাকে নক করুন✍</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>যেকোনো ফে`সবুক, ইমু, হোয়াট`সঅ্যাপ, ই`মো সহ আরো সব আইডি ha`ck/back করতে চাইলে আমাকে নক করুন !!</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>ফেসবুক আইডি হ্যা`ক করাতে চাইলে আমাকে মেসেজ korun !</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>ফেসবু.,ক, ইন্সটা//গ্রাম, হোয়াট/সঅ্যাপ, ই/মো ইত্যাদি হ্যা/কিং এর কাজ করা হয় !</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>ফেসবুক আই,ডি হ্যা,,ক করা হয়, করাতে চাইলে যো,,গাযোগ করুন ইন,বক্সে।</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>ফেসবুক আইডি হ্যা,,ক লাগলে মেসে,জ করুন আমাকে !</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>হ্যা,কিং এর কাজ করা হয়। ফেস,বুক, ইন্স,টাগ্রাম, ইমো, হোয়া,টসঅ্যাপ ইত্যাদি, এখনি যোগাযোগ করুন।</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>১০০% সফলতার সাথে হ্যা,কিং এর কাজ করে থাকি। মেসেজ করুন আইডি হ্যা,ক করাতে চাইলে।</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
+
+    <div class="message">
+      <p>অভিজ্ঞ হ্যা,,কার এর মাধ্যমে হ্যা,কিং সেবা দেওয়া হয়। ফেসবুক সহ যাবতীয় একাউন্ট হ্যা,,ক করাতে চাইলে এখনি যোগাযোগ করুন।</p>
+      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    </div>
   </div>
 
   <script>
-    function copyText() {
-      const textBox = document.getElementById('textToCopy');
-      textBox.select();
-      document.execCommand('copy');
-
-      const successMsg = document.getElementById('successMsg');
-      successMsg.style.display = 'block';
-      setTimeout(() => {
-        successMsg.style.display = 'none';
-      }, 2000);
+    function copyText(element) {
+      const text = element.previousElementSibling.textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Text copied to clipboard');
+      });
     }
   </script>
-
 </body>
 </html>
